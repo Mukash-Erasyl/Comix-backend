@@ -12,7 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "https://comix-frontend.herokuapp.com")
+@CrossOrigin(origins = "https://comix-frontend-jabai.herokuapp.com")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
