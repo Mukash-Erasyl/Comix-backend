@@ -14,7 +14,7 @@
 	<name>Web-Shop</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>19.0.2</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
