@@ -10,8 +10,8 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import com.Jabai.WebShop.domain.Status;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,7 +22,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.data.domain.Sort;
@@ -197,7 +196,7 @@ public class ComixController {
             comix.setImages(paths);
             comixService.save(comix);
         } else {
-            paths = List.of("Comix not found");
+            paths = Arrays.asList("Comix not found");
         }
 
         return paths;
