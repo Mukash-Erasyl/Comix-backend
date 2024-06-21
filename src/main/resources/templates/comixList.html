@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список комиксов</title>
+</head>
+<body>
+<h1>Список комиксов</h1>
+<ul>
+    <!-- Здесь будут отображаться элементы списка комиксов -->
+    <th:block th:each="comix : ${comixList}">
+        <li>
+            <a th:href="@{/api/comix/{id}(id=${comix.id})}" th:text="${comix.title}"></a>
+            <img th:src="${comix.coverImage}" alt="Cover image of the comix" width="100">
+        </li>
+    </th:block>
+</ul>
+<a href="/comixForm">Добавить комикс</a>
+</body>
+</html>
