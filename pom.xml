@@ -90,6 +90,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+			<version>1.18.32</version> <!-- Укажите нужную вам версию здесь -->
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
