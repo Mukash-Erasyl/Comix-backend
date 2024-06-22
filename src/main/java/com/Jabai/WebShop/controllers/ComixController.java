@@ -27,7 +27,7 @@ import java.util.List;
 import org.springframework.data.domain.Sort;
 
 
-@CrossOrigin(origins = "https://comix-frontend-jabaika-731663d931ec.herokuapp.com")
+//@CrossOrigin(origins = "https://comix-frontend-jabaika-731663d931ec.herokuapp.com")
 @RestController
 @RequestMapping("/api/comix")
 public class ComixController {
